@@ -1,6 +1,6 @@
 # Material-Hub
 
-A modern theme for Github. Google's Material Design was kept in mind for most of the project. Keep in mind this is a <b>WIP</b> theme. Github is a site In this design I tried to put their current content in a fresh and modern look without altering the work flow.
+A modern theme for Github. Google's Material Design was kept in mind for most of the project. Keep in mind this is a <b>WIP</b> theme. In this design I tried to put their current content in a fresh and modern look without altering the work flow.
 
 ![Alt text](https://i.imgur.com/s3P6Vtg.png "Material Hub")
 
