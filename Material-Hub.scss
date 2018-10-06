@@ -286,6 +286,12 @@ div#dashboard {
     ul.flex-items-center.text-bold.list-style-none { 
         li {
             width: 100%;
+            a {
+                width: 100%;
+                padding: 18px 0 18px 20px!important;
+                font-weight: 400;
+                font-size: 0!important;
+            }
         }
     }
     &:hover {
@@ -575,6 +581,7 @@ input#your-repos-filter::placeholder {
     margin-left: unset;
     margin-top: 80px;
     overflow-y: auto;
+    box-shadow: inset 0px 20px 20px -14px rgba(0, 0, 0, 0.06);
 }
 .repository-content {
     width: 100%;
@@ -582,6 +589,19 @@ input#your-repos-filter::placeholder {
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    .issues-listing {
+		&.js-check-all-container {
+    		width: calc(100% - 50px);
+    		margin: 0 auto;
+    	}
+        div#partial-discussion-header {
+        	width: calc(100% - 103px);
+    		margin: 0 auto;
+        }
+        .discussion-timeline {
+    		width: calc(100% - 220px);
+		}
+    }
 }
 .blankslate-spacious {
     margin-top: 30px;
@@ -716,6 +736,19 @@ tr.js-navigation-item:hover .icon svg path {
     overflow-y: auto;
     display: flex;
     overflow-x: hidden;
+    .container-lg.new-discussion-timeline.experiment-repo-nav.p-responsive {
+        .repository-content  {
+            .subnav-bordered {
+                width: calc(100% - 50px);
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+            .blankslate {
+                width: calc(100% - 50px);
+                max-width: unset !important;
+            }
+        }
+    }
 }
 .repohead .repohead-details-container {
     order: 1;
@@ -737,7 +770,7 @@ tr.js-navigation-item:hover .icon svg path {
     border-top: unset;
     border-left: unset;
     border-right: unset;
-    background-color: transparent;
+    background-color: #eaeaea;
     color: var(--primary-color) !important;
 }
 .reponav-item:hover, 
